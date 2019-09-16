@@ -11,7 +11,8 @@
       
   <div class="q-pa-md">
     <q-table
-      title="天主教及基督新教中文用語對照"
+      title="聖經書卷譯名"
+      dense
       :data="data"
       :columns="columns"
       row-key="name"
@@ -39,7 +40,7 @@
         />
       </template> -->
       <template v-slot:top-right>
-        <q-input borderless dense debounce="300" v-model="filter" placeholder="Search">
+        <q-input dense debounce="300" v-model="filter" placeholder="搜索">
           <template v-slot:append>
             <q-icon name="search" />
           </template>
@@ -78,7 +79,7 @@ export default {
         {
           name: 'en',
           required: true,
-          label: 'English',
+          label: '英語譯名',
           align: 'left',
           field: row => row.en,
           format: val => `${val}`,
@@ -86,12 +87,12 @@ export default {
         },
         // { name: 'en', align: 'center', label: 'English', field: 'en', sortable: true },
         // { name: 'en-abbr', label: 'en-abbr', field: 'en-abbr', sortable: true },
-        { name: 'prot', label: 'prot', field: 'prot' },
+        { name: 'prot', label: '新教漢語譯名', field: 'prot' },
         // { name: 'prot-abbr', label: 'prot-abbr', field: 'prot-abbr' },
-        { name: 'cath', label: 'cath', field: 'cath' },
+        { name: 'cath', label: '天主教漢語譯名', field: 'cath' },
         // { name: 'cath-abbr', label: 'cath-abbr', field: 'cath-abbr', sortable: true },
       ],
-      data:[
+      data: [
  {
    "en": "Genesis (Gn)",
    "prot": "創世紀 (創)",
@@ -174,12 +175,12 @@ export default {
  },
  {
    "en": "Tobit (Tb)",
-   "prot": "",
+   "prot": "多比傳",
    "cath": "多俾亞傳 (多)"
  },
  {
    "en": "Judith (Jdt)",
-   "prot": "",
+   "prot": "猶滴傳",
    "cath": "友弟德傳 (友)"
  },
  {
@@ -189,12 +190,12 @@ export default {
  },
  {
    "en": "1 Maccabees (1Mc)",
-   "prot": "",
+   "prot": "瑪加伯書上",
    "cath": "馬加伯上 (加上)"
  },
  {
    "en": "2 Maccabees (2Mc)",
-   "prot": "",
+   "prot": "瑪加伯書下",
    "cath": "馬加伯下 (加下)"
  },
  {
@@ -224,12 +225,12 @@ export default {
  },
  {
    "en": "Wisdom of Solomon (Ws)",
-   "prot": "",
+   "prot": "所羅門智訓",
    "cath": "智慧篇 (智)"
  },
  {
-   "en": "Wisdom of Jesus Son of Sirach (Si)",
-   "prot": "",
+   "en": "Wisdom of Sirach (Si)",
+   "prot": "便西拉智訓",
    "cath": "德訓篇 (德)"
  },
  {
@@ -249,7 +250,7 @@ export default {
  },
  {
    "en": "Baruch (Ba)",
-   "prot": "",
+   "prot": "巴錄書",
    "cath": "巴路克 (巴)"
  },
  {
@@ -456,7 +457,7 @@ export default {
    "en": "Revelation (Rev)",
    "prot": "啟示錄 (啟)",
    "cath": "默示錄 (默)"
- },
+ }
 ]
 
     }
