@@ -1,5 +1,5 @@
 <template>
-  <q-page class="padding">
+  <q-page class="padding bg-brown-2">
     <div >
       <!-- <div class="search-wrapper">
         <input type="text" v-model="searchText" placeholder="Search title.."/>

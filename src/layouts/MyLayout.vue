@@ -26,33 +26,25 @@
       content-class="bg-grey-2"
     >
       <q-list>
-        <q-item-label header>Essential Links</q-item-label>
-        <q-item clickable tag="a" target="_blank" href="https://quasar.dev">
+        <q-item-label header>連結目錄</q-item-label>
+
+        <q-item to="/">
           <q-item-section avatar>
-            <q-icon name="school" />
+            <q-icon name="menu_book" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Docs</q-item-label>
-            <q-item-label caption>quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://github.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="code" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Github</q-item-label>
-            <q-item-label caption>github.com/quasarframework</q-item-label>
+            <q-item-label>聖經書卷</q-item-label>
+            <!-- <q-item-label caption>github.com/quasarframework</q-item-label> -->
           </q-item-section>
         </q-item>
         
-        <q-item clickable tag="a" target="_blank" href="nouns">
+        <q-item to="/nouns">
           <q-item-section avatar>
-            <q-icon name="code" />
+            <q-icon name="nature_people" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Nouns</q-item-label>
-            <q-item-label caption>nouns</q-item-label>
+            <q-item-label>專用名詞</q-item-label>
+            <!-- <q-item-label caption>nouns</q-item-label> -->
           </q-item-section>
         </q-item>
       </q-list>

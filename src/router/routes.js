@@ -4,15 +4,9 @@ const routes = [
     path: '/',
     component: () => import('layouts/MyLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
-    ]
-  },
-  //// ??? 
-  {
-    path: '/nouns',
-    component: () => import('layouts/MyLayout.vue'),
-    children: [
-      { path: 'nouns', component: () => import('pages/Nouns.vue') }
+      { path: '', component: () => import('pages/Books.vue') },
+      { path: '/books', component: () => import('pages/Books.vue') },
+      { path: '/nouns', component: () => import('pages/Nouns.vue') }
     ]
   }
 ]

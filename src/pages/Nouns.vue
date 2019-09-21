@@ -1,5 +1,5 @@
 <template>
-  <q-page class="padding">
+  <q-page class="padding bg-brown-2">
   <div class="q-pa-md">
     <q-table
       title="聖經專用名詞譯名"
