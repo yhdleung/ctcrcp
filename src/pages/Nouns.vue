@@ -1,17 +1,8 @@
 <template>
   <q-page class="padding">
-    <div >
-      <!-- <div class="search-wrapper">
-        <input type="text" v-model="searchText" placeholder="Search title.."/>
-            <label>Search title:</label>
-      </div> -->
-      <!-- <button @click="clearMessage">Clear</button> -->
-
-    </div>
-      
   <div class="q-pa-md">
     <q-table
-      title="聖經書卷譯名"
+      title="聖經專用名詞譯名"
       dense
       :data="data"
       :columns="columns"
@@ -21,24 +12,6 @@
       :filter="filter"
       hide-bottom
     >
-
-      <!-- <template v-slot:top="props">
-        <q-space />
-
-        <q-select
-          v-model="visibleColumns"
-          multiple
-          borderless
-          dense
-          options-dense
-          :display-value="$q.lang.table.columns"
-          emit-value
-          map-options
-          :options="columns"
-          option-value="name"
-          style="min-width: 150px"
-        />
-      </template> -->
       <template v-slot:top-right>
         <q-input dense debounce="300" v-model="filter" placeholder="搜索">
           <template v-slot:append>
@@ -54,7 +27,7 @@
 </template>
 
 <script>
-import books from 'assets/books.json';
+import nouns from 'assets/nouns.json';
 
 export default {
   // name: 'PageIndex',
@@ -89,7 +62,7 @@ export default {
         { name: 'cath', label: '天主教漢語譯名', field: 'cath' },
         // { name: 'cath-abbr', label: 'cath-abbr', field: 'cath-abbr', sortable: true },
       ],
-      data: books 
+      data: nouns 
     }
   },
   computed: {

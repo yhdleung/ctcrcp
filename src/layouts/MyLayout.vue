@@ -45,6 +45,16 @@
             <q-item-label caption>github.com/quasarframework</q-item-label>
           </q-item-section>
         </q-item>
+        
+        <q-item clickable tag="a" target="_blank" href="nouns">
+          <q-item-section avatar>
+            <q-icon name="code" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Nouns</q-item-label>
+            <q-item-label caption>nouns</q-item-label>
+          </q-item-section>
+        </q-item>
       </q-list>
     </q-drawer>
 
