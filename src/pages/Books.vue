@@ -13,6 +13,7 @@
     <q-table
       title="聖經書卷譯名"
       dense
+      wrap-cells
       :data="data"
       :columns="columns"
       row-key="name"

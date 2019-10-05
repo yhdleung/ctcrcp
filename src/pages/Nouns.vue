@@ -10,7 +10,8 @@
       :pagination.sync="pagination"
       :visible-columns="visibleColumns"
       :filter="filter"
-      hide-bottom
+      :rows-per-page-options="[5,10,20,50,100]"
+      rows-per-page-label="每頁行數"
     >
       <template v-slot:top-right>
         <q-input dense debounce="300" v-model="filter" placeholder="搜索">
@@ -35,12 +36,10 @@ export default {
     return{
       searchText: '',
 
-
       pagination: {
         sortBy: 'name',
         descending: false,
-        // page: 2,
-        rowsPerPage: 1000
+        rowsPerPage: 20
       },
       filter: '',
       // visibleColumns: ['en', 'en-abbr', 'prot', 'prot-abbr', 'cath', 'cath-abbr'],
