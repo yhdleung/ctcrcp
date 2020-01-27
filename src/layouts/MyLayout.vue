@@ -28,7 +28,7 @@
       <q-list>
         <q-item-label header>連結目錄</q-item-label>
 
-        <q-item to="/">
+        <q-item to="/books">
           <q-item-section avatar>
             <q-icon name="menu_book" />
           </q-item-section>

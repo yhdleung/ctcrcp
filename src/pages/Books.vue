@@ -22,6 +22,11 @@
       :filter="filter"
       hide-bottom
     >
+      <!-- 
+      virtual-scroll
+      table-style="max-height: 77vh"
+      :rows-per-page-options="[0]" 
+      -->
 
       <!-- <template v-slot:top="props">
         <q-space />
